@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Speed Racer</title>
+    <!-- Lib -->
+    <script src="./lib/p5.min.js"></script>
+    <script src="./lib/p5.dom.min.js"></script>
+    <script src="./lib/p5.sound.min.js"></script>
+    <script src="./lib/p5.play.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    
+    <script src="./js/Game.js"></script>
+    <script src="./js/Form.js"></script>
+    <script src="./js/Player.js"></script>
+
+    <!-- Firebase SDK CODE ADD BELOW -->
+    <!-- O SDK JS do Firebase principal é sempre necessário e deve ser listado primeiro -->
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+
+<!-- FAZER: Adicionar SDKs para produtos Firebase que você deseja usar
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+ // Configuração do Firebase do seu aplicativo da web
+ const firebaseConfig = {
+  apiKey: "AIzaSyCNYQ2WCPNROYWisWhiLhvVESgs_bLR_xc",
+  authDomain: "japinha-json.firebaseapp.com",
+  databaseURL: "https://japinha-json-default-rtdb.firebaseio.com",
+  projectId: "japinha-json",
+  storageBucket: "japinha-json.appspot.com",
+  messagingSenderId: "323078794880",
+  appId: "1:323078794880:web:c0c7b81f6461be8e62c065"
+};
+
+  // Inicializar Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+   
+  </head>
+  <body>
+    
+    <script src="./sketch.js"></script>
+  </body>
+</html>
